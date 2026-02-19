@@ -1,7 +1,21 @@
-<h2>Edit Employee</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Edit Employee</h1>
+
 <form action="/edit/<%= employee.id %>" method="POST">
-    Name: <input type="text" name="name" value="<%= employee.name %>" required><br>
-    Department: <input type="text" name="department" value="<%= employee.department %>" required><br>
-    Salary: <input type="number" name="salary" value="<%= employee.salary %>" required><br>
+    <input type="text" name="name" value="<%= employee.name %>" required>
+    <input type="text" name="department" value="<%= employee.department %>" required>
+    <input type="number" name="salary" value="<%= employee.salary %>" required>
     <button type="submit">Update</button>
 </form>
+
+<a href="/">Back</a>
+
+</body>
+</html>
